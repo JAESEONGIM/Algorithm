@@ -8,9 +8,9 @@ public class Main{
 
         String s = sc.nextLine();
         String s2 = s.toUpperCase();
-        int max = 0;
+        int max = -1;
         int[] count = new int[26];
-        int maxindex =0;
+
         char maxalphabet = '?';
         for (int i = 0; i < s2.length(); i++){
             char ch = s2.charAt(i);
@@ -25,7 +25,7 @@ public class Main{
                 maxalphabet = '?';
             }
         }
-        System.out.println((char)(maxalphabet));
+        System.out.println(maxalphabet);
 
 
 
